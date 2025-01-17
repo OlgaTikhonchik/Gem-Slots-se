@@ -463,7 +463,6 @@ svg {
   display: block;
   color: #727489;
   transition: all 0.5s;
-  text-decoration: underline;
 }
 
 .sidebar__links-list.active {
@@ -642,6 +641,7 @@ svg {
   transform: translate(-50%, -50%);
   border-radius: 16px;
   padding: 40px 38.5px;
+  z-index: 3;
 }
 
 .features-banner__background::before,
@@ -843,6 +843,8 @@ svg {
   width: 50%;
   white-space: nowrap;
 }
+
+
 /* ------------ratings------------------- */
 .ratings__wrap {
   display: flex;
@@ -943,7 +945,10 @@ svg {
 .js-expand-content {
   display: none;
   overflow: hidden;
-  transition: max-height 0.3s ease;
+}
+
+.js-expand-content.expanded {
+  height: 100%;
 }
 /* ---------main__arrow------ */
 .main__arrow {
@@ -1130,6 +1135,7 @@ svg {
   width: 140px;
   margin-top: 32px;
   margin-right: 0;
+  z-index: 3;
 }
 
 .article__list li + li {
@@ -1162,6 +1168,7 @@ svg {
   flex: 0 0 323px;
   margin-left: 123px;
   margin-right: 0;
+  z-index: 3;
 }
 
 .banner__logo img {
